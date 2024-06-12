@@ -1,9 +1,8 @@
-
 * {
   outline: none;
 }
-main {
-}
+
+main {}
 
 
 
@@ -13,10 +12,11 @@ main {
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
-  background:black;
-  font-family: "YuGothic", "Yu Gothic", "游ゴシック", "游ゴシック体",  "Meiryo", "メイリオ", sans-serif;
+  /* background:black; */
+  font-family: "YuGothic", "Yu Gothic", "游ゴシック", "游ゴシック体", "Meiryo", "メイリオ", sans-serif;
   font-size: 1.2vw;
   font-weight: medium;
   line-height: 1.8;
@@ -36,7 +36,10 @@ a {
   transition: .2s ease-in-out;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
 }
 
@@ -47,13 +50,13 @@ img {
 
 
 button {
-    border: 0;
-    background: inherit;
+  border: 0;
+  background: inherit;
 }
 
 
 .page {
-  width:100%;
+  width: 100%;
   max-width: 100%;
   overflow: hidden;
 }
@@ -67,7 +70,7 @@ button {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  
+
 }
 
 
@@ -85,6 +88,7 @@ button {
   text-align: right;
   padding: 0 0 4% 0;
 }
+
 .view_title_left {
   text-align: left;
   padding: 40px 0 40px 0;
@@ -114,46 +118,188 @@ button {
   text-align: center;
 }
 
-
-
-
-
 #first {
-  background:url(../img/first_logo_sp.png) no-repeat left top, url(../img/bg_first_image.jpg) no-repeat center 100px;
+  background: url(../img/first_logo_sp.png) no-repeat left top, url(../img/bg_first_image.jpg) no-repeat center 100px;
   background-size: 100%, 200%;
   background-color: white;
   display: block;
   height: auto;
 }
 
-#first_catchcopy {
-  height: 530px;
-  width: 90%;
-  margin: auto;
-  background:url(../img/first_catchcopy.png) no-repeat center 120px;
-  background-size: 90%;
+@media (max-width: 425px) {
+  .header {
+    background: url(../img/first_logo_sp.png) no-repeat left top, url(../img/bg_first_image.jpg) no-repeat center 100px;
+    background-size: 100%, 200%;
+    background-color: white;
+    display: block;
+    height: auto;
+  }
+
+  .img-group {
+    height: 530px;
+    width: 90%;
+    margin: auto;
+    background-size: 90%;
+  }
+
+  .letter-group {
+    height: 410px;
+    background-color: #ad3b46;
+  }
+
+  .telephone-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .telephone-img>img {
+    width: 5%;
+  }
+
+  .fixContainer {
+    background-color: rgb(145, 38, 54);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .button_question {
+    background-color: white;
+    border-radius: 15px;
+    width: 100px;
+    margin: 5px 0px;
+  }
+
+  .button_question>b {
+    font-size: 13px;
+    color: rgb(188, 0, 9);
+  }
+
+  .button_question>strong {
+    font-size: 13px;
+    color: rgb(188, 0, 9);
+  }
+
+  .contactLink>p>b {
+    font-size: 10px;
+    color: white;
+  }
+
+  a.phoneNumber>b {
+    color: white;
+    font-size: 20px;
+  }
+
+  .head-img>img {
+    width: 80%;
+  }
+
+  .head-img-1>img {
+    width: 80%;
+  }
+
+  .sm-img>img {
+    display: none;
+  }
+
+  .head-introduce {
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .head-sm {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 35px;
+    left: 175px;
+    display: none;
+
+  }
+
+  .head-lg {
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+    position: absolute;
+    left: 220px;
+    top: 30px;
+    display: none;
+
+  }
+
+  .head-sl {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    right: 25px;
+    top: 50px;
+    display: none;
+
+  }
+
+  .ye-btn {
+    background-color: rgb(205, 169, 34);
+    border-radius: 25px;
+    position: absolute;
+    top: 87px;
+    right: 30px;
+    font-size: 13px;
+    padding: 5px 10px 5px 10px;
+    display: none;
+
+  }
+
+  .sm-letter {
+    display: none;
+  }
+
+  .letter-img {
+    background-image: url(../img/first_catchcopy.png);
+    background-size: cover;
+    position: absolute;
+    top: 126px;
+    left: 53px;
+    width: 315px;
+    height: 356px;
+  }
+
+  .head-introduce {
+    display: block;
+  }
 }
 
-
-#first_detail {
-  background: #AD3B46;
+.head-img-1 {
+  text-align: center;
+  margin-top: 30px;
 }
 
-#first_detail > div {
+.head-img {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#first_detail>div {
   padding: 40px 20px;
 }
 
 #first_detail h3 {
   margin-bottom: 30px;
 }
+
 #first_detail h3 img {
   width: 100%;
 }
 
-#first_detail > div > div {
-}
+#first_detail>div>div {}
 
-#first_detail > div > div > p {
+#first_detail>div>div>p {
   padding: 10px 0 0 0;
   color: white;
   font-size: 17px;
@@ -212,14 +358,14 @@ button {
   font-size: 14px;
   font-weight: bold;
   padding: 8% 0 3% 0;
-  
+
 }
 
 .cases h5 {
   color: #B3000E;
   font-size: 20px;
   font-weight: bold;
-  
+
 }
 
 .cases p {
@@ -227,7 +373,7 @@ button {
   padding: 2% 15% 10% 15%;
   font-size: 16px;
   font-weight: bold;
-  
+
 }
 
 #four {
@@ -247,8 +393,7 @@ button {
   width: 100%;
 }
 
-#four_popular {
-}
+#four_popular {}
 
 .popular {
   width: 100%;
@@ -260,12 +405,12 @@ button {
 }
 
 .popular_no img {
-  width: 100%;  
+  width: 100%;
 }
 
 
 .popular_title img {
-  width: 100%;  
+  width: 100%;
 }
 
 .popular_detail {
@@ -274,20 +419,20 @@ button {
   font-weight: bold;
   background: white;
   border-radius: 0 0 15px 15px;
-  
+
 }
 
 .popular_detail p {
   padding: 0% 30px 0% 30px;
   text-align: left;
-  
+
 }
 
 
 .popular_detail p.target {
   padding: 30px 40px 0px 40px;
   text-align: center;
-  
+
 }
 
 .popular h5 {
@@ -329,7 +474,7 @@ button {
 
 .four_occupation {
   padding: 20px 0 20px 0;
-  
+
 }
 
 .four_occupation img {
@@ -354,11 +499,11 @@ button {
   width: 80%;
 }
 
-.voice_picture  {
+.voice_picture {
   font-size: 13px;
   font-weight: bold;
   padding: 0 0 30px 0;
-  
+
 }
 
 .voice_picture img {
@@ -379,7 +524,7 @@ button {
   line-height: 1.8;
   text-align: center;
   padding: 0 0 20px 0;
-  
+
 }
 
 .voice_detail p {
@@ -393,6 +538,7 @@ button {
 #five_voice_other {
   padding: 0 30px 0 30px;
 }
+
 #five_voice_other_title {
   width: 95%;
   margin: 0 5% 0 0;
@@ -463,7 +609,7 @@ button {
   font-weight: bold;
   padding: 20px 0 0px 0;
   min-height: 52px;
-  
+
 }
 
 
@@ -471,7 +617,7 @@ button {
   text-align: left;
   padding: 10px 0 20px 0;
   font-size: 16px;
-  
+
 }
 
 
@@ -512,7 +658,7 @@ button {
   font-weight: bold;
   padding: 10px 0 10px 0;
   text-align: left;
-  
+
 }
 
 
@@ -522,7 +668,7 @@ button {
   font-size: 15px;
   background: url(../img/bg_logo.png) no-repeat right bottom;
   background-size: 80%;
-  
+
 }
 
 #seven_dream .interview p {
@@ -532,7 +678,7 @@ button {
 
 
 #inquiry {
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
   display: block;
   height: auto;
 }
@@ -574,13 +720,13 @@ button {
   width: 100%;
   padding: 0px 50px;
   text-align: center;
-  
+
 }
 
 
 .button img {
-    max-width: 100%;
-  
+  max-width: 100%;
+
 }
 
 #frm_inquiry {
@@ -651,21 +797,26 @@ footer p {
 
 
 
-.sp {display:none;}
+.sp {
+  display: none;
+}
 
 #thanks {
   background: white;
 }
 
 
+.pc {
+  display: none;
+}
 
-
-.pc {display: none;}
-.sp {display: inline;}
+.sp {
+  display: inline;
+}
 
 #thanks {
   min-height: 100vh;
-  background:url(../img/first_logo_sp.png) no-repeat left top, url(../img/bg_first_image.jpg) no-repeat center 100px;
+  background: url(../img/first_logo_sp.png) no-repeat left top, url(../img/bg_first_image.jpg) no-repeat center 100px;
   background-size: 100%, 200%;
   background-color: white;
   display: block;
@@ -678,4 +829,3 @@ footer p {
 #thanks .button img {
   width: 40%;
 }
-
