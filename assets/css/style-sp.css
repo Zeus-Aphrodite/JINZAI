@@ -127,91 +127,27 @@ button {
 }
 
 @media (max-width: 425px) {
-  .header {
-    background: url(../img/first_logo_sp.png) no-repeat left top, url(../img/bg_first_image.jpg) no-repeat center 100px;
-    background-size: 100%, 200%;
-    background-color: white;
-    display: block;
-    height: auto;
-  }
 
-  .img-group {
-    height: 530px;
-    width: 90%;
-    margin: auto;
-    background-size: 90%;
-  }
-
-  .letter-group {
-    height: 410px;
-    background-color: #ad3b46;
-  }
-
-  .telephone-img {
+  /* .telephone-img {
     display: flex;
     align-items: center;
   }
 
   .telephone-img>img {
     width: 5%;
-  }
+  } */
 
-  .fixContainer {
-    background-color: rgb(145, 38, 54);
-    display: flex;
-    padding: 20px;
-    align-items: center;
-  }
 
-  .button_question {
-    background-color: white;
-    border-radius: 15px;
-    width: 100px;
-    margin: 5px 0px;
-  }
-
-  .button_question>b {
-    font-size: 13px;
-    color: rgb(188, 0, 9);
-  }
-
-  .button_question>strong {
-    font-size: 13px;
-    color: rgb(188, 0, 9);
-  }
-
-  .contactLink>p>b {
-    font-size: 10px;
-    color: white;
-  }
-
-  a.phoneNumber>b {
-    color: white;
-    font-size: 20px;
-  }
-
-  .head-img>img {
-    width: 80%;
-  }
-
-  .head-img-1>img {
-    width: 80%;
-  }
-
-  .sm-img>img {
-    display: none;
-  }
-
-  .head-introduce {
+  /* .head-introduce {
     display: none;
     color: white;
     font-size: 20px;
     font-weight: 600;
     padding: 20px;
     margin-top: 20px;
-  }
+  } */
 
-  .head-sm {
+  /* .head-sm {
     color: red;
     font-size: 20px;
     font-weight: 600;
@@ -220,9 +156,9 @@ button {
     left: 175px;
     display: none;
 
-  }
+  } */
 
-  .head-lg {
+  /* .head-lg {
     font-size: 30px;
     font-weight: 700;
     color: red;
@@ -242,9 +178,9 @@ button {
     top: 50px;
     display: none;
 
-  }
+  } */
 
-  .ye-btn {
+  /* .ye-btn {
     background-color: rgb(205, 169, 34);
     border-radius: 25px;
     position: absolute;
@@ -254,28 +190,19 @@ button {
     padding: 5px 10px 5px 10px;
     display: none;
 
-  }
+  } */
 
-  .sm-letter {
+  /* .sm-letter {
     display: none;
-  }
+  } */
 
-  .letter-img {
-    background-image: url(../img/first_catchcopy.png);
-    background-size: cover;
-    position: absolute;
-    top: 126px;
-    left: 53px;
-    width: 315px;
-    height: 356px;
-  }
 
   .head-introduce {
     display: block;
   }
 }
 
-.head-img-1 {
+/* .head-img-1 {
   text-align: center;
   margin-top: 30px;
 }
@@ -283,7 +210,7 @@ button {
 .head-img {
   text-align: center;
   padding-top: 50px;
-}
+} */
 
 #first_detail>div {
   padding: 40px 20px;
