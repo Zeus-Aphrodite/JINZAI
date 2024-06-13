@@ -74,7 +74,7 @@ html {
   position: absolute;
   background-image: url(../img/bg_first_top_right.png);
   background-size: contain;
-  background-position: right;
+  background-position: right top;
   background-repeat: no-repeat;
   top: 0;
   right: 0;
@@ -153,10 +153,11 @@ html {
 @media screen and (max-width: 510px) {
   .header .img-group .letter-img {
     position: relative;
-    margin-top: 170rem;
+    margin-top: 25%;
     left: 0;
     width: 70%;
     height: 480rem;
+    top: 0;
   }
 }
 .header .group {
@@ -345,7 +346,7 @@ html {
 @media screen and (max-width: 510px) {
   .fixContainer {
     position: unset;
-    padding: 20px;
+    justify-content: space-between;
     align-items: center;
     height: 100rem;
   }
@@ -356,6 +357,12 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 5px;
+}
+@media screen and (max-width: 510px) {
+  .fixContainer .contactLink {
+    width: unset;
+    padding: 3px 0;
+  }
 }
 .fixContainer .contactLink .contact-tel {
   display: flex;
@@ -429,6 +436,7 @@ html {
 @media screen and (max-width: 510px) {
   .fixContainer .button-group {
     flex-direction: column;
+    width: unset;
   }
 }
 .fixContainer .button-group .button_question {
